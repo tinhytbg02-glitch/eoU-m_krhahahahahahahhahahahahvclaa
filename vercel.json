@@ -1,8 +1,16 @@
 {
   "rewrites": [
     {
-      "source": "/2026/RST/RST_Controller2.asp",
-      "destination": "/redirect.html"
+      "source": "/testsavepdf/:path*",
+      "destination": "https://testsavepdf.vercel.app/:path*"
+    },
+    {
+      "source": "/report/:path*",
+      "destination": "https://report-project.vercel.app/:path*"
+    },
+    {
+      "source": "/app/:path*",
+      "destination": "https://app-project.vercel.app/:path*"
     }
   ]
 }
