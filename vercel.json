@@ -3,10 +3,10 @@
     {
       "source": "/testsavepdf/:path*",
       "destination": "https://testsavepdf.vercel.app/:path*"
-    }
+    },
   {
       "source": "/0003w/:path*",
-      "destination": "https://0003w.vercel.app//:path*"
+      "destination": "https://0003w.vercel.app/:path*"
     }
    
   ]
