@@ -4,11 +4,6 @@
       "source": "/testsavepdf/:path*",
       "destination": "https://testsavepdf.vercel.app/:path*"
     }
-
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
   
   ]
 }
