@@ -4,14 +4,11 @@
       "source": "/testsavepdf/:path*",
       "destination": "https://testsavepdf.vercel.app/:path*"
     }
-{
-  "rewrites": [
+
     {
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ]
-}
-    
+  
   ]
 }
