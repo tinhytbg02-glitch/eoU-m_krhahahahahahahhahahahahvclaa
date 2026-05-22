@@ -5,7 +5,7 @@
       "destination": "https://testsavepdf.vercel.app/:path*"
     },
   {
-      "source": "/0003w/:path*",
+      "source": "/0003/:path*",
       "destination": "https://0003w.vercel.app/:path*"
     }
    
