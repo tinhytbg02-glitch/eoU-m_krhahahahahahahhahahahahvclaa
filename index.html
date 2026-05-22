@@ -522,63 +522,7 @@ const token =
 
 history.replaceState({}, '', '/' + token);
 
-      window.addEventListener("load", () => {
-
-    function randomToken(length = 80) {
-
-        const chars =
-        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-
-        let result = "";
-
-        for (let i = 0; i < length; i++) {
-
-            result += chars[
-                Math.floor(
-                    Math.random() * chars.length
-                )
-            ];
-        }
-
-        return result;
-    }
-
-    /* TOKEN */
-
-    const token =
-        randomToken();
-
-    /* URL TOKEN */
-
-    const tokenURL =
-        "/r/p.asp?p=" + token;
-
-    /* CHANGE URL */
-
-    history.pushState(
-        {},
-        "",
-        tokenURL
-    );
-
-    console.log("STEP 1:", location.href);
-
-    /* WAIT */
-
-    setTimeout(() => {
-
-        history.pushState(
-            {},
-            "",
-            "/"
-        );
-
-        console.log("STEP 2:", location.href);
-
-    }, 5000);
-
-});
-
+     
     </script>
   </div>
 
