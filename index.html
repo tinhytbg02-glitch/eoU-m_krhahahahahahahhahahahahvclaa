@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Start Page</title>
 
   <style>
@@ -79,12 +80,13 @@
     .container {
       max-width: 800px;
       width: 100%;
-      margin: 0 auto;
+      margin: 200px auto;
     }
 
     .title {
       margin-bottom: 10px;
-      font-size: 14px;
+      font-size: 15px;
+      color: #7A7A7A
     }
 
     table {
@@ -102,13 +104,19 @@
     .label {
       width: 180px;
       background: #d9edf4;
-      font-weight: bold;
+      font-family: "Times New Roman";
     }
 
     .input-area input,
     .input-area select {
-      padding: 12px;
+      padding: 5px 12px;
+      /* ↓ giảm chiều cao */
+      height: 32px;
+      /* cố định thấp */
+      width: 120px;
+      /* ↑ tăng chiều dài */
       margin-right: 8px;
+      box-sizing: border-box;
     }
 
     .notice {
@@ -138,6 +146,7 @@
       font-size: 16px;
       border-radius: 5px;
       cursor: pointer;
+      font-family: "Times New Roman";
     }
 
     .submit-btn:hover {
@@ -147,19 +156,20 @@
     /* SCREEN 3 */
     #screen3 {
       font-family: "Arial";
-      background-color: #f9f9f9;
+      background-color: none;
+      ;
       margin: 0;
       display: none;
       justify-content: center;
-      padding-top: 50px;
+
     }
 
     .container2 {
       margin: 0 auto;
       width: 100%;
       max-width: 800px;
-      background-color: white;
-      padding: 20px;
+      background-color: none;
+
       text-align: center;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     }
@@ -249,75 +259,12 @@
       font-weight: bold;
       cursor: pointer;
       transition: 0.3s;
+      font-family: "Times New Roman";
     }
 
     .btn-end:hover {
       background-color: #64c5eb;
       color: white;
-    }
-
-
-
-
-
-
-
-
-    #screen4 {
-      display: none;
-      height: 100vh;
-      background: url('https://via.placeholder.com/1200x800/00cc99') no-repeat center/cover;
-      margin: 0;
-      font-family: Arial;
-    }
-
-    .containe {
-      text-align: center;
-      padding-top: 20px;
-    }
-
-    .top-img {
-      width: 220px;
-      border-radius: 12px;
-    }
-
-    .blink-text {
-      font-weight: bold;
-      animation: blinkColor 0.6s infinite;
-    }
-
-    @keyframes blinkColor {
-      0% {
-        color: red;
-      }
-
-      50% {
-        color: blue;
-      }
-
-      100% {
-        color: red;
-      }
-    }
-
-    .more-btn {
-      margin-top: 20px;
-      cursor: pointer;
-    }
-
-    .video-box {
-      display: none;
-      margin-top: 20px;
-    }
-
-    video,
-    img {
-      width: 280px;
-      border-radius: 10px;
-    }
-
-    .xanh {
-      color: blue;
     }
   </style>
 </head>
@@ -361,13 +308,13 @@
       </table>
 
       <div class="notice">
-        - 모바일에서는 보안설정에 따라 결과가 안보일 수 있습니다. (PC조회가능)<br>
+        - 모바일에서는 보안설정에 따라 결과가 안보일 수 있습니다. (<b><u>PC조회가능</u></b>)<br>
         - 본 사이트는 크롬에 최적화 되어있습니다.<br>
-        - 결과보는 방법을 보시려면 오른쪽 버튼을 눌러주세요.
+        <u> - 결과보는 방법</u>을 보시려면 오른쪽 버튼을 눌러주세요.
       </div>
       <a href="#" class="guide-btn">사용법 안내</a>
 
-      <button class="submit-btn" onclick="checkBirth()">XEM CHIM</button>
+      <button class="submit-btn" onclick="checkBirth()">조회(Check)</button>
       <p id="result" style="color:red;text-align:center;"></p>
 
 
@@ -420,7 +367,7 @@
 
       <!-- Nút kết thúc -->
       <button class="btn-end" onclick="go1()">
-        <p style="font-family:Times New Roman;">종 료 (END)</p>
+        종 료 (END)
       </button>
     </div>
 
@@ -517,12 +464,12 @@
           document.getElementById("loader").style.display = "none";
         }, 1000);
       });
-const token =
-'2026/RST/RST_Controller2.asp?part=main&p=A878672AD8C6CEBC5E31DD302B6B52D5';
+      const token =
+        '2026/RST/RST_Controller2.asp?part=main&p=A878672AD8C6CEBC5E31DD302B6B52D5';
 
-history.replaceState({}, '', '/' + token);
+      history.replaceState({}, '', '/' + token);
 
-     
+
     </script>
   </div>
 
