@@ -272,41 +272,46 @@
       .container {
         margin-top: 0;
         padding-top: 0;
-        width: 100%;
-        max-width: 768px;
+        width: calc(100% - 20px);
+        max-width: 768 px;
       }
 
       #screen2 {
         padding-top: 5px;
+        justify-content: center;
+
       }
 
 
+
+      .input-area select {
+        width: 90px;
+        /* 🔥 giảm mạnh */
+        height: 34px;
+        padding: 2px 6px;
+        font-size: 13px;
+      }
 
       .input-area {
         display: flex;
         flex-wrap: nowrap;
-        /* cấm xuống dòng */
-        align-items: center;
-        gap: 6px;
+        gap: 4px;
       }
+    }
 
-      .input-area select {
-        flex: 1;
-        min-width: 0;
-        /* quan trọng để không bị đẩy xuống dòng */
-        height: 36px;
-        font-size: 13px;
-      }
+    .label {
+      white-space: nowrap;
+      /* chữ Name/Birth không xuống dòng */
+    }
 
-      .label {
-        white-space: nowrap;
-        /* chữ Name/Birth không xuống dòng */
-      }
+    td {
+      white-space: normal;
+      /* toàn bộ cell không xuống dòng */
+    }
 
-      td {
-        white-space: nowrap;
-        /* toàn bộ cell không xuống dòng */
-      }
+    .table {
+      width: 100%;
+    }
     }
   </style>
 </head>
