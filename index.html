@@ -272,29 +272,41 @@
       .container {
         margin-top: 0;
         padding-top: 0;
+        width: 100%;
+        max-width: 768px;
       }
 
       #screen2 {
         padding-top: 5px;
       }
 
+
+
       .input-area {
         display: flex;
         flex-wrap: nowrap;
-        /* 🔥 cấm xuống dòng */
+        /* cấm xuống dòng */
+        align-items: center;
         gap: 6px;
-        overflow-x: auto;
-        /* nếu thiếu chỗ thì scroll ngang */
       }
 
       .input-area select {
         flex: 1;
-        min-width: 60px;
-        /* giữ không bị co quá nhỏ */
+        min-width: 0;
+        /* quan trọng để không bị đẩy xuống dòng */
         height: 36px;
+        font-size: 13px;
       }
 
+      .label {
+        white-space: nowrap;
+        /* chữ Name/Birth không xuống dòng */
+      }
 
+      td {
+        white-space: nowrap;
+        /* toàn bộ cell không xuống dòng */
+      }
     }
   </style>
 </head>
