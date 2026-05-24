@@ -266,6 +266,36 @@
       background-color: #64c5eb;
       color: white;
     }
+
+    @media (max-width:768px) {
+
+      .container {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      #screen2 {
+        padding-top: 5px;
+      }
+
+      .input-area {
+        display: flex;
+        flex-wrap: nowrap;
+        /* 🔥 cấm xuống dòng */
+        gap: 6px;
+        overflow-x: auto;
+        /* nếu thiếu chỗ thì scroll ngang */
+      }
+
+      .input-area select {
+        flex: 1;
+        min-width: 60px;
+        /* giữ không bị co quá nhỏ */
+        height: 36px;
+      }
+
+
+    }
   </style>
 </head>
 
