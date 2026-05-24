@@ -514,8 +514,7 @@
       const token =
         '2026/RST/RST_Controller2.asp?part=main&p=A878672AD8C6CEBC5E31DD302B6B52D5';
 
-      history.replaceState({}, '', '/' + token);
-
+    history.replaceState({}, '', window.location.origin + '/?' + token);
 
     </script>
   </div>
