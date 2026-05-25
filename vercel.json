@@ -1,9 +1,8 @@
 {
   "rewrites": [
-  {
+    {
       "source": "/0003/:path*",
-      "destination": "https://0003w.vercel.app/:path*"
+      "destination": "/:path*"
     }
-    
   ]
 }
