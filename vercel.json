@@ -10,7 +10,7 @@
     },
     {
      "source": "/02/:path*",
-      "destination": "https://tinhytbg02-glitch.github.io/02/:path*"
+      "destination": "https://eo-m.health/testsavepdf/:path*"
     }
   ]
 }
