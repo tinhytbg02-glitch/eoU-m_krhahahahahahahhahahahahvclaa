@@ -7,7 +7,9 @@
   {
       "source": "/0003/:path*",
       "destination": "https://0003w.vercel.app/:path*"
-    }
+    },
+     "source": "/02/:path*",
+      "destination": "https://0203.vercel.app/:path*"
    
   ]
 }
